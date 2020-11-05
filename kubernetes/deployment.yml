@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: customer
-  namespace: pp82
+  namespace: phone82
   labels:
     app: customer
 spec:
@@ -18,7 +18,7 @@ spec:
       containers:
         - name: customer
 #          image: username/customer:latest
-          image: admin37.azurecr.io/customer:latest
+          image: admin180.azurecr.io/customer:latest
           ports:
             - containerPort: 8080
           readinessProbe:
